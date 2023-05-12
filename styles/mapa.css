@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #66ccff, #66ffcc);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin: 30px auto;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+#map {
+  height: 500px;
+  width: 70%;
+  margin: 0 auto 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+div {
+  margin: 20px auto;
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+}
+
+span {
+  font-weight: bold;
+}
+
+#ruta1 {
+  color: #b22222;
+}
+
+#ruta2 {
+  color: #228b22;
+}
+
+#ruta3 {
+  color: #ffd700;
+}
+
+#ruta4 {
+  color: #ff8c00;
+}
+
+#ruta5 {
+  color: #1e90ff;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/index.css" rel="stylesheet">
+    <title>Formulario Cliente</title>
+</head>
+<body>
+    <form id="form" action="/guardar-datos" method="POST" onsubmit="return onSubmitForm();">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="latitud">Latitud:</label>
+      <input type="text" id="latitud" name="latitud" required>
+
+      <label for="longitud">Longitud:</label>
+      <input type="text" id="longitud" name="longitud" required>
+
+      <input type="hidden" id="coordenadas" name="coordenadas">
+
+      <button type="submit">Enviar</button>
+    </form>
+  
+    <div id="map"></div>
+  
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCMwYVJyXuQHkzHJkrGs_So5Q3iIKtUgs&callback=initMap"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>
